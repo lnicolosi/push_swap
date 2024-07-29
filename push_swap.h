@@ -42,7 +42,26 @@ void	append_node(t_node **stack, int nbr);
 t_node	*find_last_node(t_node *head);
 t_node	*find_smallest(t_node *stack);
 t_node	*return_cheapest(t_node *stack);
+bool	stack_sorted(t_node *stack);
 int		stack_len(t_node *stack);
+void	finish_rotation(t_node **s, t_node *n, char c);
 
+// algo
+void	tiny_sort(t_node **a);
+void	handle_five(t_node **a, t_node **b);
+void	push_swap(t_node **a, t_node **b);
+
+// commands
+void	sa(t_node **a, bool checker);
+void	sb(t_node **b, bool checker);
+void	ss(t_node **a, t_node **b, bool checker);
+void	ra(t_node **a, bool checker);
+void	rb(t_node **b, bool checker);
+void	rr(t_node **a, t_node **b, bool checker);
+void	rra(t_node **a, bool checker);
+void	rrb(t_node **b, bool checker);
+void	rrr(t_node **a, t_node **b, bool checker);
+void	pa(t_node **a, t_node **b, bool checker);
+void	pb(t_node **b, t_node **a, bool checker);
 
 #endif
